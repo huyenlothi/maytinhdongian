@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 20%;
+            margin-left: 500px;
+            border-width: medium;
+        }
+        table {
+border-collapse: collapse;
+
+            margin: 20px 20px ;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 5px 5px;
+            color: blue;
+            font-size: medium;
+        }
+        input {
+            width: 245px;
+            height: 20px;
+            padding: 10px;
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <td colspan="4"><input id="result" type="text"></td>
+    </tr>
+    <tr>
+        <td> <button value="1"  onclick="result.value += 1"> 1 </button> </td>
+        <td> <button value="2" onclick="result.value += 2"> 2 </button> </td>
+        <td> <button value="3"  onclick="result.value += 3"> 3 </button> </td>
+        <td> <button  onclick="result.value += '+' "> + </button> </td>
+    </tr>
+    <tr>
+        <td> <button value="4" onclick="result.value += 4"> 4 </button> </td>
+        <td> <button value="5" onclick="result.value += 5"> 5 </button> </td>
+        <td> <button value="6"  onclick="result.value += 6"> 6 </button> </td>
+        <td> <button onclick="result.value += '-' "> - </button> </td>
+    </tr>
+    <tr>
+        <td> <button value="7"  onclick="result.value += 7"> 7 </button> </td>
+        <td> <button value="8"  onclick="result.value += 8"> 8 </button> </td>
+        <td> <button value="9" onclick="result.value += 9"> 9 </button> </td>
+        <td> <button onclick="result.value += '*' "> * </button> </td>
+    </tr>
+    <tr>
+        <td><button type="reset" onclick="">C</button></td>
+        <td> <button value="0" onclick="result.value += 0"> 0 </button> </td>
+        <td> <button onclick="result.value=eval(result.value)"> = </button> </td>
+        <td> <button onclick="result.value += '/' "> / </button> </td>
+    </tr>
+
+    </tbody>
+
+</table>
+</body>
+</html>
